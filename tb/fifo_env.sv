@@ -10,8 +10,14 @@ class fifo_env #(parameter DATA_WIDTH = 8) extends uvm_env;
 
     function void build_phase(uvm_phase phase);
         super.build_phase(phase);
+        `uvm_info("ENV","Environment started building",UVM_LOW)
         agt = fifo_agent#(DATA_WIDTH)::type_id::create("agt", this);
         scb = fifo_scoreboard#(DATA_WIDTH)::type_id::create("scb",this);
+        
+    endfunction
+
+    function void connect_phase(uvm_phase phase);
+        agt.mon.mon_analysis_port.connect(scb.scb_export);
     endfunction
 
 endclass

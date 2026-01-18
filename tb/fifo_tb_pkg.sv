@@ -1,6 +1,6 @@
-
+`timescale 1ns/1ns
 package fifo_tb_pkg;
-    `timescale 1ns/1ns
+    
     
 
     import uvm_pkg::*;

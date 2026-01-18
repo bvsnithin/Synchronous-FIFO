@@ -2,7 +2,6 @@ import uvm_pkg::*;
 `include "uvm_macros.svh"
 import fifo_params_pkg::*;
 import fifo_tb_pkg::*;
-`include "../tests/test.sv"
 
 module top;
     logic clk;

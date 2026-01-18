@@ -13,6 +13,7 @@ class fifo_driver #(parameter DATA_WIDTH = 8) extends uvm_driver #(fifo_seq_item
 
     function void build_phase(uvm_phase phase);
         super.build_phase(phase);
+        `uvm_info("DRIVER","DRIVER build phase, agent is running",UVM_LOW)
         if(!uvm_config_db#(virtual fifo_if #(DATA_WIDTH))::get(this, "", "vif", vif)) begin
             `uvm_fatal("NO_VIF", "Virtual interface not found in Config DB")
         end

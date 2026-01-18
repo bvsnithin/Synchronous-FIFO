@@ -12,7 +12,7 @@ class fifo_agent #(parameter DATA_WIDTH = 8) extends uvm_agent;
 
     function void build_phase(uvm_phase phase);
         super.build_phase(phase);
-        
+        `uvm_info("AGENT","AGENT build phase, agent is running",UVM_LOW)
         drv = fifo_driver#(DATA_WIDTH)::type_id::create("drv", this);
         sqr = uvm_sequencer#(fifo_seq_item#(DATA_WIDTH))::type_id::create("sqr", this);
         mon = fifo_monitor#(DATA_WIDTH)::type_id::create("mon", this);
