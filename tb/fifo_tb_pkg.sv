@@ -14,6 +14,7 @@ package fifo_tb_pkg;
     `include "fifo_monitor.sv"
     `include "fifo_agent.sv"
     `include "fifo_scoreboard.sv"
+    `include "fifo_coverage.sv"
     `include "fifo_env.sv"
     
     

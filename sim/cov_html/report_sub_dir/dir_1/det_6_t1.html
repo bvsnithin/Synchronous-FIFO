@@ -1,0 +1,210 @@
+<HTML>
+<HEAD>
+<link type="text/css" rel="stylesheet" href="../../imc.css"></link>
+<script type="text/javascript" src="../../sortable.js"></script>
+<TITLE>IMC Report: cov_html</TITLE></HEAD>
+<BODY>
+<A NAME="_topcov"></A>
+<P class="summary_title">Coverage   Summary Report, Instance-Based</P>
+
+<P class="fs"><A STYLE="float: left" class="namet" HREF="../../index.html">Top Level Summary</A><A STYLE="float: right" class="namet" HREF="../../legend.html">Legend and Help</A></P>
+<BR>
+<TABLE class="detail_header"><TR class="detail"><TD>
+
+<B>Instance name: </B><A HREF="../dir_1/summ_4_t1.html" class="namet">top</A>.dut<BR>
+
+<B>Type name: </B>fifo<BR>
+
+<B>File name: </B><A HREF="/home/grads/b/bvsnithin412/projects/synchronous_fifo/design/fifo.sv" TARGET="_blank">/home/grads/b/bvsnithin412/projects/synchronous_fifo/design/fifo.sv</A><BR>
+
+</TD></TR></TABLE>
+
+<BR>
+<P class="subtitle">Coverage Summary Report, Instance-Based</P>
+<TABLE class="sortable sml summary_table" id="totalTable">
+
+
+<TR><TH class="wht">Overall</TH>
+<TH class="wht">Overall Covered</TH>
+<TH class="wht">Block</TH>
+<TH class="wht">Expression</TH>
+<TH class="wht">Toggle</TH>
+<TH class="wht">FSM&nbsp;State</TH>
+<TH class="wht">FSM&nbsp;Transition</TH>
+<TH class="wht">Assertion</TH>
+<TH class="wht">CoverGroup</TH>
+<TH class="wht">CoverGroup Covered</TH>
+<TH class="wht">name</TH>
+
+</TR>
+
+<TR><TD class="range85to89"><A HREF="">87.73%</A></TD>
+<TD class="range80to84"><A HREF="">81.25%&nbsp;(130/160)</A></TD>
+<TD class="range100"><A HREF="#_Blockcov">100.00%&nbsp;(10/10)</A></TD>
+<TD class="range80to84"><A HREF="#_Expressioncov">83.33%&nbsp;(5/6)</A></TD>
+<TD class="range75to79"><A HREF="#_Togglecov">79.86%&nbsp;(115/144)</A></TD>
+<TD class="rangenone">n/a</TD>
+<TD class="rangenone">n/a</TD>
+<TD class="rangenone">n/a</TD>
+<TD class="rangenone">n/a</TD>
+<TD class="rangenone">n/a</TD>
+<TD class="namecell">dut</TD>
+
+</TR>
+
+
+</TABLE>
+<BR><BR><A NAME="_Blockcov"></A>
+<P class="detail_title">     Uncovered Block Detail Report, Instance Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Instance name: </B>top.dut<BR>
+<B>Type name: </B>fifo<BR>
+<B>File name: </B><A HREF="/home/grads/b/bvsnithin412/projects/synchronous_fifo/design/fifo.sv" TARGET="_blank">/home/grads/b/bvsnithin412/projects/synchronous_fifo/design/fifo.sv</A><BR><B>Number of uncovered blocks: </B>0 of 10<BR>
+<B>Number of unreachable blocks: </B>0<BR>
+
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+Count  Block Line  Kind                 Origin Source Code                    
+------------------------------------------------------------------------------
+
+0 items found
+
+</PRE>
+<A NAME="_Expressioncov"></A>
+<P class="detail_title">     Uncovered Expression Detail Report, Instance Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Instance name: </B>top.dut<BR>
+<B>Type name: </B>fifo<BR>
+<B>File name: </B><A HREF="/home/grads/b/bvsnithin412/projects/synchronous_fifo/design/fifo.sv" TARGET="_blank">/home/grads/b/bvsnithin412/projects/synchronous_fifo/design/fifo.sv</A><BR><B>Number of uncovered expressions: </B>1 of 6<BR>
+<B>Number of unreachable expressions: </B>0<BR>
+
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+index  | grade         | line   | expression                                         
+-------------------------------------------------------------------------------------
+1.1    | 66.67% (2/3)  | 38     | wr_en && (! full)                                  
+
+<B>index: </B><B>1.1</B><B> grade: </B><B>66.67% (2/3)</B><B> line: </B><B>38</B><B> source: </B><B></B>
+
+wr_en && (! full)<BR>
+<B><</B>-<B>1</B>-<B>></B>       <B><</B><B>2</B>-<B>></B>
+
+index     | hit   | rval | &lt;1&gt; &lt;2&gt; 
+-----------------------------------
+1.1.2     | 0     | 0    | -   1   
+
+
+</PRE>
+<A NAME="_Togglecov"></A>
+<P class="detail_title">     Uncovered Toggle Detail Report, Instance Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Instance name: </B>top.dut<BR>
+<B>Type name: </B>fifo<BR>
+<B>File name: </B><A HREF="/home/grads/b/bvsnithin412/projects/synchronous_fifo/design/fifo.sv" TARGET="_blank">/home/grads/b/bvsnithin412/projects/synchronous_fifo/design/fifo.sv</A><BR><B>Number of uncovered signal bits: </B>29 of 144<BR>
+<B>Number of unreachable signal bits: </B>0<BR>
+<B>Number of signal bits partially toggled(rise): </B>18 of 144<BR>
+<B>Number of signal bits partially toggled(fall): </B>0 of 144<BR>
+
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+Hit(Full)  Hit(Rise)  Hit(Fall)  Signal                    
+-----------------------------------------------------------
+0          1          0          rst_n                     
+0          1          0          dout[59]                  
+0          1          0          dout[47]                  
+0          1          0          dout[42]                  
+0          0          0          dout[40]                  
+0          1          0          dout[39]                  
+0          1          0          dout[38]                  
+0          0          0          dout[35]                  
+0          1          0          dout[33]                  
+0          1          0          dout[32]                  
+0          0          0          dout[26]                  
+0          1          0          dout[24]                  
+0          0          0          dout[22]                  
+0          1          0          dout[21]                  
+0          1          0          dout[20]                  
+0          1          0          dout[19]                  
+0          0          0          dout[18]                  
+0          0          0          dout[14]                  
+0          1          0          dout[9]                   
+0          1          0          dout[7]                   
+0          1          0          dout[6]                   
+0          1          0          dout[3]                   
+0          0          0          full                      
+0          0          0          wr_ptr[4]                 
+0          0          0          wr_ptr[3]                 
+0          1          0          wr_ptr[2]                 
+0          0          0          rd_ptr[4]                 
+0          0          0          rd_ptr[3]                 
+0          1          0          rd_ptr[2]                 
+
+</PRE>
+<A NAME="_Fsmcov"></A>
+<P class="detail_title">     Uncovered Fsm Detail Report, Instance Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Instance name: </B>top.dut<BR>
+<B>Type name: </B>fifo<BR>
+<B>File name: </B><A HREF="/home/grads/b/bvsnithin412/projects/synchronous_fifo/design/fifo.sv" TARGET="_blank">/home/grads/b/bvsnithin412/projects/synchronous_fifo/design/fifo.sv</A><BR>
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+
+0 items found
+
+</PRE>
+<A NAME="_Assertioncov"></A>
+<P class="detail_title">     Uncovered Assertion Detail Report, Instance Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Instance name: </B>top.dut<BR>
+<B>Type name: </B>fifo<BR>
+<B>File name: </B><A HREF="/home/grads/b/bvsnithin412/projects/synchronous_fifo/design/fifo.sv" TARGET="_blank">/home/grads/b/bvsnithin412/projects/synchronous_fifo/design/fifo.sv</A><BR><B>Number of uncovered assertions: </B>0 of 0<BR>
+
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+Finished Failed Assertion                      Line  Source Code                    
+------------------------------------------------------------------------------------
+
+0 items found
+
+</PRE>
+<A NAME="_CoverGroupcov"></A>
+<P class="detail_title">     Covered+Uncovered+Excluded+UNR CoverGroup Detail Report, Instance Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Instance name: </B>top.dut<BR>
+<B>Type name: </B>fifo<BR>
+<B>File name: </B><A HREF="/home/grads/b/bvsnithin412/projects/synchronous_fifo/design/fifo.sv" TARGET="_blank">/home/grads/b/bvsnithin412/projects/synchronous_fifo/design/fifo.sv</A><BR><B>Number of covered cover bins: </B>0 of 0<BR>
+<B>Number of uncovered cover bins: </B>0 of 0<BR>
+<B>Number of excluded cover bins: </B>0<BR>
+
+
+</TD></TR></TABLE>
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+
+0 items found
+
+</PRE>
